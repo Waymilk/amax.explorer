@@ -1,5 +1,5 @@
 <template lang="pug">
-router-view 
+router-view
 </template>
 
 <script lang="ts">
@@ -48,5 +48,6 @@ export default defineComponent({
 <style lang="scss">
 .router-link-exact-active {
     @apply text-green;
+    font-weight: 600;
 }
 </style>

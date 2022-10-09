@@ -1,17 +1,24 @@
 <template lang="pug">
-.lg_p-4.p-2
-    Wrapper.flex.items-center
+.lg_p-4.p-4
+    .flex.items-center
         router-link.flex.lg_flex-1.items-center.mr-2(to='/')
-            img.object-contain.lg_w-24.w-16(src='@/assets/images/logo.png', style='image-rendering: -webkit-optimize-contrast')
-            .space-x-8.hidden.lg_block.ml-12.text-gray-666
-                router-link(to='/analytics/AMAX') {{ $t('message.nav1') }}
-                router-link(to='/ram') {{ $t('message.nav2') }}
-                router-link(to='/producers') {{ $t('message.nav3') }}
+            img.object-contain.lg_w-40.w-16(src='@/assets/images/logo.png', style='image-rendering: -webkit-optimize-contrast')
+            //- .space-x-8.hidden.lg_block.ml-12.text-gray-666
+            //-     router-link(to='/analytics/AMAX') {{ $t('message.nav1') }}
+            //-     router-link(to='/ram') {{ $t('message.nav2') }}
+            //-     router-link(to='/producers') {{ $t('message.nav3') }}
         .flex.flex-1.lg_space-x-8.space-x-2.items-center.justify-end.text-sm
-            .w-full.flex.lg_w-96.h-8.bg-gray-eee.rounded-full.px-2.items-center
-                input.pl-4.bg-transparent.w-full.h-full.outline-none.text-xs(:placeholder='$t("message.placeholder")', v-model='keyword', @keyup='changeInput')
-                i.text-xl.fal.fa-search.text-gray-ca.mr-1.cursor-pointer(@click='search()')
+            //- .w-full.flex.lg_w-96.h-8.bg-gray-eee.rounded-full.px-2.items-center
+            //-     input.pl-4.bg-transparent.w-full.h-full.outline-none.text-xs(:placeholder='$t("message.placeholder")', v-model='keyword', @keyup='changeInput')
+            //-     i.text-xl.fal.fa-search.text-gray-ca.mr-1.cursor-pointer(@click='search()')
                 //- span.btn.btn-xs.rounded-full(:class='keyword ? "cursor-pointer" : "opacity-50 cursor-not-allowed"', @click='search') Search
+            .space-x-8.hidden.lg_block.ml-12.text-gray-666
+                router-link(to='/') {{ `首页` }}
+                router-link(to='/producers') {{ $t('message.nav3') }}
+                router-link(to='/analytics/AMAX') {{ `区块` }}
+                router-link(to='/ram') {{ `交易` }}
+                router-link(to='/ram') {{ `代币` }}
+
             .relative.cursor-pointer.text-gray-333.group
               .flex.items-center
                 span.hidden.lg_block {{ currentLang }}

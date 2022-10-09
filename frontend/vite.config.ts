@@ -6,6 +6,7 @@ import { resolve } from 'path';
 export default defineConfig({
     plugins: [vue()],
     server: {
+      host: '0.0.0.0' ,
         proxy: {
             // '/api': 'http://120.77.26.105:3039',
             // '/api': 'https://testnet.amaxscan.io',

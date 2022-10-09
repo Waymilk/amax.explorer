@@ -1,5 +1,5 @@
 <template lang="pug">
-.flex.flex-col.text-sm.font-semibold.h-screen
+.flex.flex-col.text-sm.h-screen.bg-primary.bg-index-bg.bg-auto.bg-no-repeat.bg-top
   LayoutHeader
   .flex-1(class="overflow-auto")
     LayoutLive(v-model.show="show")

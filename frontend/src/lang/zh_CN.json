@@ -2,7 +2,7 @@
     "message": {
         "nav1": "数据分析",
         "nav2": "RAM",
-        "nav3": "节点",
+        "nav3": "生产节点",
         "placeholder": "按区块号 \/ 账户 \/ 公钥 \/ 交易ID 搜索",
         "head1": "RAM价格",
         "head2": "账户",
